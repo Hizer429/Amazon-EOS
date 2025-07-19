@@ -1,0 +1,20 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.amazon.eos
+productName: Amazon EOS
+asar: true
+files:
+  - filter:
+      - '**/*'
+win:
+  target: nsis
+  icon: assets/amazon_logo.ico
+nsis:
+  oneClick: true
+  perMachine: false
+  allowToChangeInstallationDirectory: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Amazon EOS
+electronVersion: 29.4.6

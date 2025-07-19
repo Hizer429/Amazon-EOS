@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GYR2 EOS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="header">
+    <div id="header-logo-wrap">
+      <img class="percy-left" src="assets/peccy_pa.png" alt="Peccy in PA vest" />
+      <img id="logo-img" src="assets/amazon_logo.png" alt="Amazon Logo" />
+      <img class="percy-right" src="assets/peccy_tdr.png" alt="Peccy in TDR vest" />
+    </div>
+    <h1>GYR2 EOS</h1>
+  </div>
+
+  <div id="drop-zone">
+    <p>📂 Drop your manifest CSV file here</p>
+  </div>
+
+  <div id="tile-container">
+    <div class="stat-bar orange" id="dropPallets"><span>📦 DROP PALLETS</span><strong class="value">0</strong></div>
+    <div class="stat-bar teal" id="dropFloor"><span>🏢 DROP FLOOR</span><strong class="value">0</strong></div>
+    <div class="stat-bar purple" id="parcelsDock"><span>📫 PARCELS on dock</span><strong class="value">0</strong></div>
+    <div class="stat-bar purple" id="parcelsYard"><span>📬 PARCELS in yard</span><strong class="value">0</strong></div>
+    <div class="stat-bar gold" id="totalParcels"><span>📦 TOTAL PARCELS</span><strong class="value">0</strong></div>
+    <div class="stat-bar green" id="transshipYard"><span>🔄 TRANSSHIP in yard</span><strong class="value">0</strong></div>
+    <div class="stat-bar red" id="azngOver72"><span>⏱️ AZNG > 72h</span><strong class="value">0</strong></div>
+    <div class="stat-bar blue" id="livesHanded"><span>🙌 Lives handed over</span><strong class="value">0</strong></div>
+    <div class="stat-bar yellow" id="volumeDoors"><span>📊 VOLUME on doors</span><strong class="value">0</strong></div>
+    <div class="stat-bar pink" id="volumeYard"><span>📈 VOLUME in yard</span><strong class="value">0</strong></div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

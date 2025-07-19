@@ -1,0 +1,13 @@
+{
+  "name": "NebulaX-Electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . NebulaX --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron": "^29.4.6"
+  }
+}
