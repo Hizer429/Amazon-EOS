@@ -1,0 +1,37 @@
+{
+  "name": "amazon-eos",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron": "^29.4.6",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.amazon.eos",
+    "productName": "Amazon EOS",
+    "asar": true,
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/amazon_logo.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Amazon EOS"
+    }
+  },
+  "dependencies": {
+    "electron-updater": "^6.6.2"
+  }
+}
